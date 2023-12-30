@@ -10,7 +10,7 @@ pluginButton.Click:Connect(function()
 	local hits = 0
 	for _, v in ipairs(game:GetDescendants()) do
 		local s, e = pcall(function() if v:IsA('Script') or v:IsA('ModuleScript') or v:IsA('LocalScript') or v:IsA('BaseScript') then
-				if v.Source:match('MarketplaceService:PromptGamePassPurchase') then 
+				if v.Source:match(':Kick') then 
 					print('hit at: '..v:GetFullName())
 					hits += 1
 				end 
